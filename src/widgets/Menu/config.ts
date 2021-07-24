@@ -117,18 +117,19 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/glocswapdex"
+    href: "https://t.me/FlatEarthTokenOffical"
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/gloccoin",
-  },
-  {
-    label: "Reddit",
-    icon: "RedditIcon",
-    href: "https://www.reddit.com/r/Gloccoin/",
-  },
+    href: "https://twitter.com/flat_token?s=21",
+  }
+  // ,
+  // {
+  //   label: "Reddit",
+  //   icon: "RedditIcon",
+  //   href: "https://www.reddit.com/r/Gloccoin/",
+  // },
 ];
 
 export const MENU_HEIGHT = 64;
