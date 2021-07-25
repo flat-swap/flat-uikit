@@ -2305,7 +2305,7 @@ var AccordionContent = styled__default['default'].div(templateObject_2$b || (tem
     return (isOpen && isPushed ? "rgba(133, 133, 133, 0.1)" : "transparent");
 });
 var Accordion = function (_a) {
-    var label = _a.label, icon = _a.icon, isPushed = _a.isPushed, pushNav = _a.pushNav, _b = _a.initialOpenState, initialOpenState = _b === void 0 ? false : _b, children = _a.children, className = _a.className;
+    var label = _a.label; _a.icon; var isPushed = _a.isPushed, pushNav = _a.pushNav, _b = _a.initialOpenState, initialOpenState = _b === void 0 ? false : _b, children = _a.children, className = _a.className;
     var _c = React.useState(initialOpenState), isOpen = _c[0], setIsOpen = _c[1];
     var handleClick = function () {
         if (isPushed) {
@@ -2318,7 +2318,6 @@ var Accordion = function (_a) {
     };
     return (React__default['default'].createElement(Container$2, null,
         React__default['default'].createElement(MenuEntry, { onClick: handleClick, className: className },
-            icon,
             React__default['default'].createElement(LinkLabel, { isPushed: isPushed }, label),
             isOpen ? React__default['default'].createElement(Icon$8, null) : React__default['default'].createElement(Icon$7, null)),
         React__default['default'].createElement(AccordionContent, { isOpen: isOpen, isPushed: isPushed, maxHeight: React__default['default'].Children.count(children) * MENU_ENTRY_HEIGHT }, children)));
