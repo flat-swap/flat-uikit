@@ -9,6 +9,7 @@ export { default as InfoIcon } from "./Info";
 export { default as LanguageIcon } from "./Language";
 export { default as LiquidityIcon } from "./Liquidity";
 export { default as LogoIcon } from "./Logo";
+export { default as MemeIcon } from "./Meme";
 export { default as MoonIcon } from "./Moon";
 export { default as MoreIcon } from "./More";
 export { default as NftIcon } from "./Nft";
