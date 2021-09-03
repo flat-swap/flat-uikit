@@ -1,3 +1,4 @@
+export { default as ArenaIcon } from "./Arena";
 export { default as ExchangeIcon } from "./Exchange";
 export { default as FarmIcon } from "./Farm";
 export { default as GameIcon } from "./Game";

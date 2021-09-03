@@ -1828,6 +1828,12 @@ var useModal = function (modal, closeOnOverlayClick) {
     return [onPresentCallback, onDismiss];
 };
 
+var RugDocAudit = function (_a) {
+    var props = __rest(_a, []);
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 128 128" }, props),
+        React.createElement("image", { width: "128", height: "128", href: '/images/menu/arena-icon.png' })));
+};
+
 var Icon$I = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 96 96" }, props),
         React.createElement("image", { width: "96", height: "96", href: "/images/menu/exchange-icon.png" })));
@@ -2056,6 +2062,7 @@ var Icon$1a = function (props) {
 
 var IconModule = /*#__PURE__*/Object.freeze({
     __proto__: null,
+    ArenaIcon: RugDocAudit,
     ExchangeIcon: Icon$I,
     FarmIcon: Icon$J,
     GameIcon: Icon$K,
@@ -2395,7 +2402,7 @@ var PanelFooter = function (_a) {
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
-var RugDocAudit = function (_a) {
+var RugDocAudit$1 = function (_a) {
     var props = __rest(_a, []);
     return (React.createElement(Svg, __assign({ viewBox: "0 0 370 121" }, props),
         React.createElement("image", { width: "370", height: "121", href: '/images/egg/RugDocAudit.png' })));
@@ -2406,7 +2413,7 @@ var RugDocAuditButton = function (_a) {
     var auditLink = _a.auditLink;
     return (React.createElement(StyledAudit, null,
         React.createElement("a", { href: auditLink, "aria-label": "AuditLink", target: "_blank" },
-            React.createElement(RugDocAudit, null))));
+            React.createElement(RugDocAudit$1, null))));
 };
 var templateObject_1$D;
 
