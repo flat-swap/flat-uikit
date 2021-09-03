@@ -8,6 +8,7 @@ import { PanelProps, PushedProps } from "./types";
 interface Props extends PanelProps, PushedProps {
   showMenu: boolean;
   isMobile: boolean;
+  rugDocLink?: string;
 }
 
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
@@ -35,10 +36,11 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
 `;
 
 const Panel: React.FC<Props> = (props) => {
-  const { isPushed, showMenu } = props;
+  const { isPushed, showMenu, rugDocLink } = props;
   return (
     <StyledPanel isPushed={isPushed} showMenu={showMenu}>
       <PanelBody {...props} />
+
       <PanelFooter {...props} />
     </StyledPanel>
   );

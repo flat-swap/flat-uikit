@@ -50,6 +50,7 @@ export interface PanelProps {
 }
 
 export interface NavProps extends PanelProps {
+  rugDocLink?: string;
   account?: string;
   login: Login;
   profile?: Profile;
