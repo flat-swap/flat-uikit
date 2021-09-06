@@ -122,7 +122,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/flat_token?s=21",
+    href: "https://twitter.com/FlatSwap_Token?s=21",
   }
   // ,
   // {
