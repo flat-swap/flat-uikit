@@ -117,7 +117,7 @@ export const socials = [
   {
     label: "Telegram",
     icon: "TelegramIcon",
-    href: "https://t.me/FlatEarthTokenOffical"
+    href: "https://t.me/flat_swap"
   },
   {
     label: "Twitter",
