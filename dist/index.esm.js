@@ -1170,32 +1170,53 @@ var Skeleton = function (_a) {
 };
 var templateObject_1$s, templateObject_2$7, templateObject_3$3, templateObject_4$1, templateObject_5;
 
-var Handle = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: 32px;\n  left: 4px;\n  position: absolute;\n  top: 4px;\n  transition: left 200ms ease-in;\n  width: 32px;\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  height: 32px;\n  left: 4px;\n  position: absolute;\n  top: 4px;\n  transition: left 200ms ease-in;\n  width: 32px;\n  z-index: 1;\n"])), function (_a) {
+var Handle = styled.div(templateObject_1$t || (templateObject_1$t = __makeTemplateObject(["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  width: ", "px;\n  height: ", "px;\n  left: ", "px;\n  top: ", "px;\n  position: absolute;\n  transition: left 200ms ease-in;\n  z-index: 1;\n"], ["\n  background-color: ", ";\n  border-radius: 50%;\n  cursor: pointer;\n  width: ", "px;\n  height: ", "px;\n  left: ", "px;\n  top: ", "px;\n  position: absolute;\n  transition: left 200ms ease-in;\n  z-index: 1;\n"])), function (_a) {
     var theme = _a.theme;
     return theme.toggle.handleBackground;
+}, function (_a) {
+    var scale = _a.scale;
+    return scale === "lg" ? 32 : 18;
+}, function (_a) {
+    var scale = _a.scale;
+    return scale === "lg" ? 32 : 18;
+}, function (_a) {
+    var scale = _a.scale;
+    return scale === "lg" ? 4 : 1;
+}, function (_a) {
+    var scale = _a.scale;
+    return scale === "lg" ? 4 : 1;
 });
-var Input$1 = styled.input(templateObject_2$8 || (templateObject_2$8 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: calc(100% - 36px);\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: calc(100% - 36px);\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, Handle, function (_a) {
+var Input$1 = styled.input(templateObject_2$8 || (templateObject_2$8 = __makeTemplateObject(["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: calc(100% - ", "px);\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"], ["\n  cursor: pointer;\n  opacity: 0;\n  height: 100%;\n  position: absolute;\n  width: 100%;\n  z-index: 3;\n\n  &:checked + ", " {\n    left: calc(100% - ", "px);\n  }\n\n  &:focus + ", " {\n    box-shadow: ", ";\n  }\n\n  &:hover + ", ":not(:disabled):not(:checked) {\n    box-shadow: ", ";\n  }\n"])), Handle, function (_a) {
+    var scale = _a.scale;
+    return scale === "lg" ? 36 : 19;
+}, Handle, function (_a) {
     var theme = _a.theme;
     return theme.shadows.focus;
 }, Handle, function (_a) {
     var theme = _a.theme;
     return theme.shadows.focus;
 });
-var StyledToggle = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: 40px;\n  position: relative;\n  transition: background-color 200ms;\n  width: 72px;\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: 40px;\n  position: relative;\n  transition: background-color 200ms;\n  width: 72px;\n"])), function (_a) {
+var StyledToggle = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", "px;\n  position: relative;\n  transition: background-color 200ms;\n  width: ", "px;\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border-radius: 24px;\n  box-shadow: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  height: ", "px;\n  position: relative;\n  transition: background-color 200ms;\n  width: ", "px;\n"])), function (_a) {
     var theme = _a.theme, checked = _a.checked;
     return theme.colors[checked ? "success" : "input"];
 }, function (_a) {
     var theme = _a.theme;
     return theme.shadows.inset;
+}, function (_a) {
+    var scale = _a.scale;
+    return scale === "lg" ? 40 : 20;
+}, function (_a) {
+    var scale = _a.scale;
+    return scale === "lg" ? 72 : 40;
 });
 var templateObject_1$t, templateObject_2$8, templateObject_3$4;
 
 var Toggle = function (_a) {
-    var checked = _a.checked, props = __rest(_a, ["checked"]);
+    var checked = _a.checked, _b = _a.scale, scale = _b === void 0 ? "lg" : _b, props = __rest(_a, ["checked", "scale"]);
     var isChecked = !!checked;
-    return (React.createElement(StyledToggle, { checked: isChecked },
-        React.createElement(Input$1, __assign({ checked: checked }, props, { type: "checkbox" })),
-        React.createElement(Handle, null)));
+    return (React.createElement(StyledToggle, { checked: isChecked, scale: scale },
+        React.createElement(Input$1, __assign({ checked: checked, scale: scale }, props, { type: "checkbox" })),
+        React.createElement(Handle, { scale: scale })));
 };
 
 var byTextAscending = function (getTextProperty) { return function (objectA, objectB) {
